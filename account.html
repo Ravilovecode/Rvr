@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <header>
+    <header class="header1">
         <div class="header-top">
-            <button class="menu-btn">&#9776;</button>
-            <div class="logo">Mahato Shop</div>
+            <button class="menu-btn" onclick="toggleSidebar()">&#9776;</button>
+            <div class="header-c">
+                <img class="logo2" src="./a0df0731-cd07-4e97-af0e-b9fa0e2cf914.jpg" alt="Mahato Shop Logo">
+                <div class="logo">Mahato Shop</div>
+            </div>
             <div class="cart">
                 <span class="cart-icon">&#128722;</span>
                 <span class="cart-count">0</span>
@@ -28,6 +31,16 @@
             <button>Register</button>
         </div>
     </main>
+    
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">&times;</button>
+        <img class="profile-pic" src="./a54e3ed9-ec04-4721-9f1d-67d32deb6bae.jpg" alt="Profile Picture">
+        <a href="index.html">Home</a>
+        <a href="account.html">Account</a>
+        <a href="cart.html">Cart</a>
+        <a href="search.html">Search</a>
+        <a href="categories.html">Categories</a>
+    </div>
 
     <footer>
         <div class="footer-nav">
@@ -39,4 +52,10 @@
         </div>
     </footer>
 </body>
+<script>
+    function toggleSidebar() {
+        var sidebar = document.getElementById("sidebar");
+        sidebar.classList.toggle('open');
+    }
+</script>
 </html>
