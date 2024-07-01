@@ -120,7 +120,7 @@ footer {
 .footer-nav a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 /* Account Page Styles */
@@ -398,3 +398,9 @@ footer {
 
 
 /*** Hero Header end ***/
+
+
+.footer-text{
+    font-size: 15px;
+    margin-bottom: 0 !important;
+}
