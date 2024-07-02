@@ -6,22 +6,20 @@
     <title>Mahato Shop - Search</title>
     <link rel="stylesheet" href="./style/style.css">
 </head>
-<body>
-    <header class="header1">
-        <div class="header-top">
-            <button class="menu-btn" onclick="toggleSidebar()">&#9776;</button>
-            <div class="header-c">
-                <img class="logo2" src="./a0df0731-cd07-4e97-af0e-b9fa0e2cf914.jpg" alt="Mahato Shop Logo">
-                <div class="logo">Mahato Shop</div>
-            </div>
-            <div class="cart">
-                <span class="cart-icon">&#128722;</span>
-                <span class="cart-count">0</span>
-                <span class="menu-text">Menu</span>
-            </div>
+<header class="header1">
+    <div class="header-top">
+        <button class="menu-btn" onclick="toggleSidebar()">&#9776;</button>
+        <div class="header-c">
+            <img class="logo2" src="./a0df0731-cd07-4e97-af0e-b9fa0e2cf914.jpg" alt="Mahato Shop Logo">
+            <div class="logo">RvR Shop</div>
         </div>
-    </header>
-
+        <div class="cart">
+            <span class="cart-icon">&#128722;</span>
+            <span class="cart-count">0</span>
+            
+        </div>
+    </div>
+</header>
     <main>
         <h1>Search</h1>
         <div class="search-bar">
@@ -31,13 +29,22 @@
         <p>Search results will be displayed here.</p>
     </main>
 
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">&times;</button>
+        <img class="profile-pic" src="./a54e3ed9-ec04-4721-9f1d-67d32deb6bae.jpg" alt="Profile Picture">
+        <a href="index.html">Home</a>
+        <a href="account.html">Account</a>
+        <a href="cart.html">Cart</a>
+        <a href="search.html">Search</a>
+        <a href="categories.html">Categories</a>
+    </div>
     <footer>
         <div class="footer-nav">
-            <a href="index.html">Home</a>
-            <a href="account.html">Account</a>
-            <a href="cart.html">Cart</a>
-            <a href="search.html">Search</a>
-            <a href="categories.html">Categories</a>
+            <a href="index.html"><i class="fas fa-home"></i><p class="footer-text">Home</p></a>
+            <a href="account.html"><i class="fas fa-user"></i><p class="footer-text">Account</p></a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i><p class="footer-text">Cart</p></a>
+            <a href="search.html"><i class="fas fa-search"></i><p class="footer-text">Search</p></a>
+            <a href="categories.html"><i class="fas fa-list"></i><p class="footer-text">Categories</p></a>
         </div>
     </footer>
 </body>
